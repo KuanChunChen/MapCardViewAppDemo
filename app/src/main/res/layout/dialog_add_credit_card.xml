@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/credit_card_message_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/gap_1x"
+        android:text="@string/credit_binding_card_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="65536"
+        android:padding="@dimen/gap_2x"
+        android:text="@string/credit_bind_content"
+        android:lineSpacingExtra="@dimen/abc_control_inset_material"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16"
+        android:id="@+id/credit_card_message"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/credit_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_2x"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x"
+        android:text="@string/do_not_hint" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/credit_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:text="@string/credit_next"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/credit_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/primary"
+            android:text="@string/credit_bind"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

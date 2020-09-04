@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:gravity="center"
+    android:background="@drawable/background_car_address">
+
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="26dp"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:text="上車"
+        android:textColor="#283aac"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="101dp"
+        android:layout_height="22dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/text_black_color"
+        android:text="敬業四路 33 號"
+        android:layout_marginRight="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_edit"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/ic_btn_edit"
+
+         />
+</LinearLayout>

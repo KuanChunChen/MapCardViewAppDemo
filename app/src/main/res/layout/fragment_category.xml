@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <include
+        android:id="@+id/my_map_view"
+        layout="@layout/partial_google_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:layout_behavior="k.c.mapcardviewdemo.app.ui.widget.AnchorSheetBehavior"
+        app:layout_anchor="@+id/my_bottom_view"
+           />
+<!--    app:layout_anchor="@+id/my_bottom_view"-->
+
+    <!--    app:layout_behavior="k.c.mapcardviewdemo.app.ui.widget.AnchorSheetBehavior"-->
+
+    <include
+        android:id="@+id/my_bottom_view"
+        layout="@layout/partial_bottom_card"
+
+
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

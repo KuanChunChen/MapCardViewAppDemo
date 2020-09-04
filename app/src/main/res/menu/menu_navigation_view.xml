@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bnve_home"
+        android:icon="@drawable/item_home_selector"
+        android:title="@string/title_home"
+        />
+
+    <item
+        android:id="@+id/bnve_category"
+        android:icon="@drawable/item_category_selector"
+        android:title="@string/title_dashboard"
+        />
+
+    <item
+        android:id="@+id/bnve_car"
+        android:icon="@drawable/item_car_selector"
+        android:title="@string/title_Taxi"
+
+        />
+    <item
+        android:id="@+id/bnve_cart"
+        android:icon="@drawable/item_cart_selector"
+        android:title="@string/title_notifications"
+        />
+
+    <item
+        android:id="@+id/bnve_mine"
+        android:icon="@drawable/item_mine_selector"
+        android:title="@string/title_about"
+        />
+
+
+
+</menu>

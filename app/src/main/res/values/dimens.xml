@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!-- view尺寸 -->
+    <dimen name="size_400">400dp</dimen>
+    <dimen name="size_300">300dp</dimen>
+    <dimen name="size_260">260dp</dimen>
+    <dimen name="size_180">180dp</dimen>
+    <dimen name="size_140">140dp</dimen>
+    <dimen name="size_120">120dp</dimen>
+    <dimen name="size_100">100dp</dimen>
+    <dimen name="size_80">80dp</dimen>
+    <dimen name="size_60">60dp</dimen>
+    <dimen name="size_54">54dp</dimen>
+    <dimen name="size_45">45dp</dimen>
+    <dimen name="size_36">36dp</dimen>
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="size_18">18dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_4">4dp</dimen>
+    <dimen name="size_2">2dp</dimen>
+
+
+
+    <dimen name="gap_00625x">0.5dp</dimen>
+    <dimen name="gap_009375x">0.75dp</dimen>
+    <dimen name="gap_0125x">1dp</dimen>
+    <dimen name="gap_01875x">1.75dp</dimen>
+    <dimen name="gap_025x">2dp</dimen>
+    <dimen name="gap_05x">4dp</dimen>
+    <dimen name="gap_075x">6dp</dimen>
+    <dimen name="gap_1x">8dp</dimen>
+    <dimen name="gap_1_5x">12dp</dimen>
+    <dimen name="gap_2x">16dp</dimen>
+    <dimen name="gap_2_25x">18dp</dimen>
+    <dimen name="gap_3x">27dp</dimen>
+    <dimen name="gap_4x">32dp</dimen>
+    <dimen name="gap_5x">40dp</dimen>
+    <dimen name="gap_6x">48dp</dimen>
+    <dimen name="gap_7x">56dp</dimen>
+    <dimen name="gap_8x">64dp</dimen>
+    <dimen name="gap_9x">72dp</dimen>
+    <dimen name="gap_10x">80dp</dimen>
+    <dimen name="gap_11x">88dp</dimen>
+    <dimen name="gap_12x">96dp</dimen>
+    <dimen name="gap_13x">104dp</dimen>
+    <dimen name="gap_14x">112dp</dimen>
+    <dimen name="gap_15x">120dp</dimen>
+    <dimen name="gap_16x">128dp</dimen>
+    <dimen name="gap_17x">136dp</dimen>
+    <dimen name="gap_18x">144dp</dimen>
+    <dimen name="gap_19x">152dp</dimen>
+    <dimen name="gap_20x">160dp</dimen>
+    <dimen name="gap_21x">168dp</dimen>
+    <dimen name="gap_22x">176dp</dimen>
+    <dimen name="gap_23x">184dp</dimen>
+    <dimen name="gap_24x">192dp</dimen>
+    <dimen name="gap_25x">200dp</dimen>
+    <dimen name="gap_26x">208dp</dimen>
+    <dimen name="gap_27x">216dp</dimen>
+    <dimen name="gap_28x">224dp</dimen>
+    <dimen name="gap_29x">232dp</dimen>
+    <dimen name="gap_30x">240dp</dimen>
+    <dimen name="gap_31x">250dp</dimen>
+    <dimen name="gap_32x">260dp</dimen>
+    <dimen name="gap_33x">270dp</dimen>
+    <dimen name="gap_34x">280dp</dimen>
+    <dimen name="gap_37x">310dp</dimen>
+    <dimen name="gap_43x">370dp</dimen>
+
+    <dimen name="text_08">8sp</dimen>
+    <dimen name="text_10">10sp</dimen>
+    <dimen name="text_11">11sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_13">13sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_17">17sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_19">19sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_21">21sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="text_26">26sp</dimen>
+    <dimen name="text_28">28sp</dimen>
+    <dimen name="text_29">29sp</dimen>
+    <dimen name="text_30">30sp</dimen>
+    <dimen name="text_32">32sp</dimen>
+    <dimen name="text_33">33sp</dimen>
+    <dimen name="text_34">34sp</dimen>
+    <dimen name="text_36">36sp</dimen>
+    <dimen name="text_40">40sp</dimen>
+
+    <dimen name="popup_height_toaster">64dp</dimen>
+
+
+</resources>
