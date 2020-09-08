@@ -10,4 +10,7 @@ class SwitchViewModel {
 
     @SerializedName("button_text")
     var buttonText: String? = null
+
+    @SerializedName("image_icon")
+    var imageIcon: Int? = null
 }

@@ -8,6 +8,7 @@ interface ApiPath {
         val APP_SETTING = "/api/AppSetting"
         const val DIRECT_DISPATCH_AUTH = "/DispatchAuth"
         const val DISPATCH_ORDER = "/DispatchOrder"
+        const val DIRECTORY_GIS = "/GIS"
         const val APP_API = "AppApi"
         const val NCPM = "/NCPM"
 

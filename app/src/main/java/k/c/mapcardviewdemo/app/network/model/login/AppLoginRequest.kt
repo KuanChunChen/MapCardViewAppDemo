@@ -17,7 +17,7 @@ class AppLoginRequest : BaseHttpRequest() {
     var uuid: String? = null
     @SerializedName("NcpmType")
     var ncpmType: Int? = null
-    var refreshToken: String? = null
+
     @SerializedName("Appversion")
     var appversion: String? = null
 }

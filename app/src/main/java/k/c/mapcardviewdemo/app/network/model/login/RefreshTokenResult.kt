@@ -1,6 +1,7 @@
 package k.c.mapcardviewdemo.app.network.model.login
 
 import com.google.gson.annotations.SerializedName
+import k.c.module.http.BaseResult
 
 data class RefreshTokenResult(
 
@@ -26,7 +27,7 @@ data class RefreshTokenResult(
 	val serverUTCT: Long? = null,
 
 	@field:SerializedName("Result")
-	val result: Result? = null
+	val result: BaseResult? = null
 )
 
 

@@ -14,26 +14,36 @@ abstract class MainMapListener(var googleMap :GoogleMap) : GoogleMap.OnCameraIdl
         googleMap.setOnCameraMoveCanceledListener(this)
         googleMap.setOnCameraMoveListener (this)
 
-//        CommonSingle.mapConfig.lastKnowLatitude = googleMap.cameraPosition.target.latitude
-//        CommonSingle.mapConfig.lastKnowLongitude = googleMap.cameraPosition.target.longitude
     }
 
-
-
-
-
-
-
-
-    override fun onCameraMoveStarted(p0: Int) {
+    override fun onCameraMoveStarted(reason: Int) {
         Log.d("test123456","onCameraMoveStarted")
+
+        var isUserMoveMap = false
+
+        when (reason) {
+            GoogleMap.OnCameraMoveStartedListener.REASON_GESTURE ,
+            GoogleMap.OnCameraMoveStartedListener.REASON_API_ANIMATION-> {
+                Log.d("tst1231", "The user gestured on the map.")
+
+                isUserMoveMap = true
+            }
+
+            GoogleMap.OnCameraMoveStartedListener.REASON_DEVELOPER_ANIMATION -> {
+                Log.d("tst1231", "he app moved the camera")
+                isUserMoveMap = false
+            }
+        }
+
+
+        onMapMoveStarted(isUserMoveMap)
+
 
 
     }
 
     override fun onCameraMoveCanceled() {
         Log.d("test123456","onCameraMoveCanceled")
-        onMapTouched()
 
     }
 
@@ -41,7 +51,8 @@ abstract class MainMapListener(var googleMap :GoogleMap) : GoogleMap.OnCameraIdl
         Log.d("test123456","onCameraMove")
         CommonSingle.mapConfig.lastKnowLatitude = googleMap.cameraPosition.target.latitude
         CommonSingle.mapConfig.lastKnowLongitude = googleMap.cameraPosition.target.longitude
-
+        CommonSingle.mapConfig.currentZoomLevel = googleMap.cameraPosition.zoom
+        CommonSingle.mapConfig.visibleRegionLatLngBounds = googleMap.projection.visibleRegion.latLngBounds
 //        Log.d("test123456",CommonSingle.mapConfig.lastKnowLatitude.toString())
 //        Log.d("test123456",CommonSingle.mapConfig.lastKnowLongitude.toString())
         Log.d("test123456","onCameraMoveEnd-------")
@@ -53,19 +64,19 @@ abstract class MainMapListener(var googleMap :GoogleMap) : GoogleMap.OnCameraIdl
 
     override fun onCameraIdle() {
 //        onMapUnsettled()
+        CommonSingle.mapConfig.lastKnowLatitude = googleMap.cameraPosition.target.latitude
+        CommonSingle.mapConfig.lastKnowLongitude = googleMap.cameraPosition.target.longitude
+        CommonSingle.mapConfig.currentZoomLevel = googleMap.cameraPosition.zoom
+        CommonSingle.mapConfig.visibleRegionLatLngBounds = googleMap.projection.visibleRegion.latLngBounds
+
         onMapMoveEnd()
         Log.d("test123456","onCameraIdle")
     }
 
 
-    abstract fun onMapTouched()
-//
-//    abstract fun onMapReleased()
+    abstract fun onMapMoveStarted(isUserMoveMap :Boolean)
 
-//    abstract fun onMapUnsettled()
     abstract fun onMapMoveEnd()
 
-
-//    abstract fun onMapSettled()
 
 }

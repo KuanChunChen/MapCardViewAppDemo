@@ -8,9 +8,8 @@
     android:layout_height="300dp"
     android:background="@drawable/background_bottom_card"
 
-    app:layout_behavior="@string/bottom_sheet_behavior"
-    app:behavior_hideable="false"
-    app:behavior_peekHeight="140dp"
+
+    android:layout_gravity="bottom"
     >
 
 
@@ -77,5 +76,5 @@
                 android:background="@drawable/background_dialog_button"
                 android:text="Button" />
         </LinearLayout>
-    </FrameLayout>
+</FrameLayout>
 

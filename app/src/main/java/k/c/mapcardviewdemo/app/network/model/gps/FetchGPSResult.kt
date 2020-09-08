@@ -3,7 +3,7 @@ package k.c.mapcardviewdemo.app.network.model.gps
 import com.google.gson.annotations.SerializedName
 
 
-data class GISGeocodingReverseResult(
+data class FetchGPSResult(
 
 	@field:SerializedName("Accuracy")
 	val accuracy: Double? = null,

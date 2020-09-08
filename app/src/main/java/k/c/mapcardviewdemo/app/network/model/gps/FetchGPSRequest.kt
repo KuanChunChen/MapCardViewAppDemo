@@ -3,7 +3,7 @@ package k.c.mapcardviewdemo.app.network.model.gps
 import com.google.gson.annotations.SerializedName
 import k.c.mapcardviewdemo.app.network.model.base.BaseHttpRequest
 
-class GISGeocodingReverseRequest : BaseHttpRequest() {
+class FetchGPSRequest : BaseHttpRequest() {
 
     @SerializedName("mode")
     var mode: Int? = null

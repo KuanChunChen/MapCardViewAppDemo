@@ -49,11 +49,7 @@ data class Signature(
     val settings: String? = null
 )
 
-data class Result(
 
-    @field:SerializedName("State")
-    val state: Int? = null
-)
 
 data class TmpPin(
 
